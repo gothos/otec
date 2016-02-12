@@ -1,156 +1,195 @@
-<html><head>
+<html>
+    <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="description" content="Jozef Šebesta - murárske práce">
         <meta name="keywords" content="Jozef Šebesta,murárske,stavebné práce,murár,murárstvo,Skalica,stavba domov,prestavba">
         <meta name="author" content="Gothos">
-        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script><style type="text/css"></style>
-        <script src="/src/jquery.ui.map.full.min.js"></script>
-        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-        <script language="JavaScript" type="text/javascript">
-            $.fn.switching = function(selector){
-                selector.css('cursor','default')
-                selector.css('opacity','0.4')
-                $('#butDiv').children().not(selector).css('cursor','pointer')
-                $('#butDiv').children().not(selector).css('opacity','1.0')
-            }
-            $( document ).ready(function() {
-                
-                var a = $('body').children(":first")
-                    a.hide()
-                
-                
-                $('#ab').click(function(){
-                   
-                    if ($('#about').css('display') == 'none'){
-                        $('#contact').hide()
-                        $('#about').css('display','block')
-                        $.fn.switching($(this))
-                        $('#map').gmap('destroy')
-                        
-                    }
-                })
-                $('#con').click(function(){
-                    
-                    if ($('#contact').css('display') == 'none'){
-                        $('#about').hide()
-                        $('#contact').css('display','block')
-                        
-                        var yourStartLatLng = new google.maps.LatLng(48.850049,17.238618)
-                        $('#map').gmap({'zoom':15,'center': yourStartLatLng}).gmap('addMarker', {'position':yourStartLatLng,'animation': google.maps.Animation.DROP} )
-                        $.fn.switching($(this))
-                    }
-                })
-                
-                
-                  
-            })
-        </script>
-    <script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/23/7/common.js"></script><script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/23/7/util.js"></script><script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/23/7/stats.js"></script></head>
-    <body style="font-family:Arial;"><!--WZ-REKLAMA-1.0IZ--><div style="clear: both; width: 100%; height: 60px; padding: 0px; z-index: 99; position: relative; display: none;"><div style="width:468px;height:60px;margin:0 auto;"><!-- Kontextová reklama Sklik --><div style="width:468px;height:60px;" id="sklikReklama_55034"><iframe width="468" height="60" src="//c.imedia.cz/context?url=http%3A%2F%2Fsebesta.wz.sk%2F&amp;z=55034&amp;hash=15417155961561615540" frameborder="0" scrolling="no" style="display: block;"></iframe></div><script type="text/javascript">var sklikData = { elm: "sklikReklama_55034", zoneId: 55034, w: 468, h: 60 };</script><script type="text/javascript" src="http://c.imedia.cz/js/script.js"></script></div></div><!--WZ-REKLAMA-1.0IK-->
-        <div>
-            <div style="display:inline-block">
-                <img src="/src/building-house.jpg">
-            </div>
-            <div style="display:inline-block;vertical-align:280%;margin-top:20px;margin-left:20px;width:auto;height:auto">
-                <div style="font-size:29;color:#6E6E6E;margin-bottom:95px">
-                    Jozef Šebesta - murárske práce
-                </div>
-                <div id="butDiv" class="buts">
-                    <div id="ab" style="display:inline-block;color:#2E2E2E;cursor:margin-right:10px;opacity:0.4;font-size:18px">
-                         
-                        O mne
-                        
-                    </div>
-                    <div id="con" style="display:inline-block;color:#2E2E2E;cursor:pointer;font-size:18px">
-                        Kontakt
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        <div>
-            <div style="display:inline-block">
-                <div>
-                    <img src="/src/images5.jpg">
-                </div>
-                <div style="margin-top:15px">
-                    <img src="/src/images.jpg">
-                </div>
-            
-            </div>
-            <div style="display:inline-block;width:590px;height:600px;vertical-align:top;margin-left:175px;border-top:1px solid #cccccc">
-                <div style="margin-top:15px"> 
-                    <div id="about" style="display;block;style=font-size:18px;color:#2E2E2E">
-                        <ul style="margin-top:30px;text-align:justify">
-                            <li style="margin-top:18px">
-                                S vlastným týmom pracovníkov ponúkam stavebné práce rôzneho rozsahu od menších úpráv v interiéroch až po stavby kompletných domov na základe projektových plánov 
-                            </li>
-                            <li style="margin-top:18px">
-                                Mám dlhoročné skúsenosti s rôznymi murárskymi prácmi
-                            </li>
-                            <li style="margin-top:18px">
-                                V prípade vážneho záujmu vypracujem hrubý cenový odhad
-                            </li>
-                             
-                        </ul>
-                    
-                    
-                    </div>
-                    
-                    <div id="contact" style="display:none">
-                        <div style="display:inline-block;font-size:18px;color:#424242;">
-                            <div style="display:inline-block">
-                                <span style="display:block">
-                                    Mobil
-                                </span>
-                                <span style="display:block;margin-top:15px">
-                                    Mail
-                                </span>
-                                
-                                <span style="display:block;margin-top:15px;">
-                                    Adresa
-                                </span>
-                            </div>
-                            <div style="display:inline-block;vertical-align:top">
-                                <span style="display:block;">
-                                    : 
-                                    <strong>
-                                        +421908761496
-                                    </strong>
-                                </span>
-                                <span style="display:block;margin-top:15px">
-                                    : sebesta.jozef@gmail.com
-                                </span>
-                                <span style="display:block;margin-top:15px">
-                                    : Veterná 10
-                                </span>
-                                <span style="display:block;margin-left:8px;margin-top:10px">
-                                    90901 Skalica
-                                </span>
-                                <span style="display:block;margin-left:8px;margin-top:10px">
-                                    Slovenská republika
-                                </span>
-                                
-                            </div>
-                        
-                        
-                            
-                        </div>
-                        <div style="display:inline-block;float:right">
 
-                            
-                            <div id="map" style="width:300px;height:300px">
-                            </div>
-                            
-                            <div style="margin-top:20px">
-                                <img src="/src/cbk.jpeg">
-                            </div>
+
+
+
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/freelancer.css" rel="stylesheet">
+
+    </head>
+
+
+
+    <body style="font-family:Arial;" id="page-top" class="index">
+
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#page-top">Jozef Šebesta - murárske práce</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#about">O mne</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#contact">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <header>
+            <div class="container">
+                <div class="row" style="">
+                    <div class="col-lg-12">
+                        <img class="img-responsive" src="src/building-house.jpg">
+                        <div class="intro-text" style="margin-top:50px">
+                            <span class="name" style="font-size: 37px;">Hľadáte murára ?</span>
+                            <span class="name" style="font-size: 37px;">Ste zo Skalice alebo okolia ?</span>
+                            <span class="name" style="font-size: 37px;">Som vám k dispozícii !</span>
                         </div>
-                    
+
+
+
                     </div>
                 </div>
+
+
             </div>
-        </div>
+        </header>
+
+
+
+            <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container" style="margin-top:40px">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>O mne</h2>
+                        <div style="border-bottom:1px solid #cccccc;margin-bottom:20px;margin-top:20px;"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-lg-offset-2">
+
+
+
+                            <ul class="seznam" style="">
+                                <li>
+                                    <div class="seznam-pismo" style="font-size:24px;">
+                                        Mám dlhoročné skúsenosti s rôznymi murárskymi prácmi
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="seznam-pismo" style="font-size:24px;">
+                                        V prípade vážneho záujmu vypracujem hrubý cenový odhad
+                                    </div>
+                                </li>
+                            </ul>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact" id="contact">
+
+            <div class="container" style="margin-top:40px">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>Kontakt</h2>
+                        <div style="border-bottom:1px solid #cccccc;margin-bottom:20px;margin-top:20px;"></div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-lg-8 col-lg-offset-5">
+                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                        <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                        <div class="table-responsive" style="">
+                            <table class="table" style="width:inherit;font-size:22px;">
+                                <tr><td>Mobil:</td><td>0908761496</td></tr>
+                                <tr><td>Adresa:</td><td>Veterná 10</td></tr>
+                                <tr><td></td><td>90901 Skalica</td></tr>
+                                <tr><td></td><td><div id="map" style="width:300px;height:300px"></div></td></tr>
+                            </table>
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <script src="src/jquery.ui.map.full.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
+
+    <script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/23/7/common.js">
+
+    </script><script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/23/7/util.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/23/7/stats.js"></script>
+
+
+
+    <script language="JavaScript" type="text/javascript">
+
+        $( document ).ready(function() {
+
+            var yourStartLatLng = new google.maps.LatLng(48.850049,17.238618)
+            $('#map').gmap({'zoom':15,'center': yourStartLatLng}).gmap('addMarker', {'position':yourStartLatLng,'animation': google.maps.Animation.DROP} )
+
+            // Highlight the top nav as scrolling occurs
+        })
+    </script>
+    <script src="js/freelancer.js"></script>
+
+
+
+
+
+
+
+
+
+
         
     
 
