@@ -18,3 +18,12 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+
+$( document ).ready(function() {
+
+    var yourStartLatLng = new google.maps.LatLng(48.850049,17.238618)
+    $('#map').gmap({'zoom':15,'center': yourStartLatLng}).gmap('addMarker', {'position':yourStartLatLng,'animation': google.maps.Animation.DROP} )
+
+                // Highlight the top nav as scrolling occurs
+})
